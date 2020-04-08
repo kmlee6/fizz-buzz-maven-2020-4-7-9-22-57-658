@@ -26,4 +26,11 @@ public class FizzBuzzTest {
         String returnValue = fizzBuzz.play(5);
         assertEquals("Buzz", returnValue);
     }
+
+    @Test
+    public void should_return_FizzBuzz_when_input_is_multiple_of_3_and_5(){
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String returnValue = fizzBuzz.play(15);
+        assertEquals("FizzBuzz", returnValue);
+    }
 }

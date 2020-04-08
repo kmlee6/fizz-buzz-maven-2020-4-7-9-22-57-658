@@ -3,12 +3,13 @@ package com.oocl;
 public class FizzBuzz {
 
     public String play(int input) {
+        String outputString = "";
         if(input % 3 == 0){
-            return "Fizz";
+            outputString += "Fizz";
         }
         if(input % 5 == 0){
-            return "Buzz";
+            outputString += "Buzz";
         }
-        return ""+input;
+        return outputString.length()>0 ? outputString : ""+input;
     }
 }
