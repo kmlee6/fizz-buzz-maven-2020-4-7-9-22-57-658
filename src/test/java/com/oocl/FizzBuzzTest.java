@@ -33,4 +33,12 @@ public class FizzBuzzTest {
         String returnValue = fizzBuzz.play(15);
         assertEquals("FizzBuzz", returnValue);
     }
+
+    @Test
+    public void should_answer_correct_for_all_student() {
+        String expected = "1\n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n11\nFizz\n13\n14\nFizzBuzz\n";
+        App peLesson = new App();
+        String output = peLesson.letsPlayAGame(15);
+        assertEquals(expected, output);
+    }
 }
